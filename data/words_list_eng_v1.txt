@@ -14,8 +14,7 @@ Vacuum
 Unicorn
 Undertaker
 Sock
-Loch
-Ness
+Loch Ness
 Horse
 Berlin
 Platypus
@@ -89,8 +88,7 @@ Doctor
 Wake
 Cricket
 Millionaire
-New
-York
+New York
 State
 Bermuda
 Park
@@ -192,8 +190,7 @@ Smuggler
 Train
 Embassy
 Pupil
-Scuba
-Diver
+Scuba Diver
 Ice
 Tap
 Code
@@ -315,8 +312,7 @@ Draft
 Head
 Lap
 Orange
-Ice
-Cream
+Ice Cream
 Film
 Washer
 Pool
