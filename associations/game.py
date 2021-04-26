@@ -13,11 +13,22 @@ class Card:
 """
 import random
 import sys
+import time
 import logging as log
 
 
 class Game:
-    def __init__(self, horizontal=5, vertical=5, reds=9, blues=8, blacks=1):
+    def __init__(
+        self,
+        data_file="data/words_list_eng_v1.txt",
+        horizontal=5,
+        vertical=5,
+        reds=9,
+        blues=8,
+        blacks=1,
+    ):
+        self.data_file = data_file
+        self.start_time = time.time()
         self.horizontal = horizontal
         self.vertical = vertical
         self.reds = reds
@@ -29,7 +40,7 @@ class Game:
 
     def open_file(self):
         log.info(sys.executable)
-        with open("data/words_list_eng_v1.txt", "r") as data_file:
+        with open(self.data_file, "r") as data_file:
             return random.sample(data_file.readlines(), self.field_size)
 
     def create_field(self):

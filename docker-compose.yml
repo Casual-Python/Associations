@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  server:
+    container_name: server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./associations:/app
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+    entrypoint: /start-reload.sh
